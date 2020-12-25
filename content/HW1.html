@@ -1,0 +1,215 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CMSiMDE 網際內容管理系統</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CMSiMDE 網際內容管理系統</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About ..html'>About .</a><li class='has-children'><a href='Topics.html'>Topics</a><ul class='dropdown'><li><a href='w1.html'>w1</a><li><a href='w2.html'>w2</a><li><a href='w3.html'>w3</a><li><a href='w4 - w9.html'>w4 - w9</a><li><a href='w10 - w14.html'>w10 - w14</a><li><a href='w15 - w18.html'>w15 - w18</a></li></ul><li><a href='HW1.html'>HW1</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">w15 - w18 << <a href='w15 - w18.html'>Previous</a> <br /><h1>HW1</h1>
+<p>What You Need to Know About the CourseThis course contains multiple modules.</p>
+<p>Each module has features designed to support you as an independent learner, including:</p>
+<ul lang="">
+<li lang=""><em class="bold" lang=""><em class="italic" lang="">Learning Objectives:</em></em><span> </span>These are descriptions of what you should be able to do at the end of a section. A Learning Objective will allow you to direct your learning efforts and enable you to monitor your progress as you explore the content and engage in the activities.</li>
+<li lang=""><em class="bold" lang=""><em class="italic" lang="">Explanatory Content:</em></em><span> </span>This is the informational “meat” of every chapter. Consisting of short passages of text with information, examples, images, and explanations, this explanatory content contains pieces such as:
+<ul lang="">
+<li lang=""><em class="italic" lang="">Walk-throughs:</em><span> </span>These are videos embedded in the pages to exemplify the concepts you are exploring. They may provide a more detailed explanation of a topic or guide you through the steps of a process.</li>
+<li lang=""><em class="italic" lang="">Examples:</em><span> </span>Designed to illustrate specific applications of the skills and learning objectives that the course supports you to achieve.</li>
+<li lang=""><em class="italic" lang="">Labs:</em><span> </span>Simulations and lab activities designed to give you an opportunity to interact with various hardware elements.</li>
+<li lang=""><em class="italic" lang="">Many Students Wonder sidebars:</em><span> </span>These sidebars serve two purposes: (1) to give a quick review of concepts, such as "highly specialized input devices," that are used in the PC Hardware material and (2) to provide additional material or background information that you may find surprising and interesting but that is not going to be assessed in the Quiz.</li>
+</ul>
+</li>
+<li lang=""><em class="bold" lang=""><em class="italic" lang="">Learning Activities:</em></em><span> </span>There are different types of activities interspersed throughout the course. They include:
+<ul lang="">
+<li lang=""><em class="italic" lang="">Learn By Doing activities:</em><span> </span>Learn By Doing activities follow the short explanations and examples. These activities give you the chance to investigate and practice key ideas. Learn By Doing activities have hints and feedback to guide you if you need it.</li>
+<li lang=""><em class="italic" lang="">Did I Get This? activities:</em><span> </span>Did I Get This? activities are your chance to do a quick "self-check." These activities do not have hints, and often follow a Learn by Doing activity so that you can determine if you understand the key ideas. This will help you make sure you are ready for graded activities.</li>
+<li lang=""><em class="italic" lang="">Quizzes:</em><span> </span>These are short assignments that are graded. There is a Quiz at the end of each Module. The Quiz will show you and your instructor how well you understand the key concepts. If you read the information and do the activities in each Module, you should be ready for the Quiz.</li>
+</ul>
+</li>
+<li lang=""><em class="bold" lang=""><em class="italic" lang="">Metacognitive Activities:</em></em><span> </span>These activities are designed to support your development as an independent learner, encouraging you to reflect on your progress and plan for continuing success. These activities include:
+<ul lang="">
+<li lang=""><em class="italic" lang="">My Response activities:</em><span> </span>These short activities are located at the end of the module; they encourage you to reflect on your progress through the module and estimate how well you believe you've attained the module's learning objectives. These activities also provide a place to share continuing questions and areas of difficulty (if you're using the course in conjunction with an instructor, your questions will be shared with your instructor).</li>
+<li lang=""><em class="italic" lang="">Checkpoints:</em><span> </span>These activities are located across the course after sections of content that can be particularly challenging or require additional practice. These metacognitive<span> </span><span class="term" lang="">checkpoints</span>encourage you to review your progress so far and assess yourself: are you ready to continue, or do you believe you need additional materials, practice, or self-assessment? If you feel that you're not ready to proceed, these checkpoints provide links to additional learning materials.</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="N106D6">
+<div class="sectionContain">您需要了解的課程內容<br/>本課程包含多個模塊。每個模塊均具有旨在支持您作為獨立學習者的功能，包括：<br/><br/>學習目標：這些是本節末尾應該做的事情的描述。學習目標將使您能夠指導學習努力，並在探索內容和參與活動時監控進度。<br/>解釋性內容：這是每章的信息性“內容”。由簡短的段落，信息，示例，圖像和說明組成，此說明性內容包含以下內容：<br/>演練：這些是嵌入在頁面中的視頻，以例證您正在探索的概念。他們可能會提供有關主題的更詳細說明，或指導您完成流程的各個步驟。<br/>示例：旨在說明該課程支持您實現的技能和學習目標的特定應用。<br/>實驗室：模擬和實驗室活動旨在為您提供與各種硬件元素進行交互的機會。<br/>許多學生都想知道側邊欄：這些側邊欄有兩個目的：（1）快速回顧概念，例如PC硬件材料中使用的“高度專業化的輸入設備”，以及（2）提供其他材料或背景信息您可能會發現令人驚訝和有趣的東西，但是測驗中不會對此進行評估。<br/>學習活動：在整個課程中散佈著不同類型的活動。它們包括：<br/>邊幹邊學的活動：邊幹邊學的活動遵循簡短的說明和示例。這些活動使您有機會研究和實踐關鍵思想。邊做邊學活動有提示和反饋，以在需要時為您提供指導。<br/>我明白了嗎？活動：我明白了嗎？活動是您進行快速“自我檢查”的機會。這些活動沒有提示，通常會跟隨“做中學”活動，以便您確定自己是否了解關鍵思想。這將幫助您確保已準備好進行分級活動。<br/>測驗：這些是評分的短期作業。每個模塊的末尾都有一個測驗。測驗將向您和您的老師展示您對關鍵概念的理解程度。如果您閱讀了該信息並在每個模塊中進行了活動，那麼您應該已經做好測驗的準備。<br/>元認知活動：這些活動旨在支持您作為獨立學習者的發展，鼓勵您反思自己的進步併計劃繼續取得成功。這些活動包括：<br/>我的響應活動：這些簡短的活動位於模塊的末尾；他們鼓勵您反思本單元的學習進度，並估計您認為自己達到本單元學習目標的程度。這些活動還提供了一個分享繼續存在的問題和困難領域的地方（如果您與講師一起使用本課程，您的問題將與講師分享）。<br/>檢查點：這些活動位於課程的各個部分之後，這些部分可能特別具有挑戰性或需要其他練習。這些元認知檢查點可以鼓勵您回顧迄今為止的進展並進行自我評估：您準備好繼續嗎，還是您認為您需要其他材料，練習或自我評估？如果您感覺還沒有準備好繼續，可以使用這些檢查點來鏈接到其他學習資料。</div>
+</div><br />w15 - w18 << <a href='w15 - w18.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
